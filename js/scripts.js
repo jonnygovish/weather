@@ -5,8 +5,10 @@ var to_be_run_on_server_response = function (weather_data) {
     $('.max_temp').append(weather_data.main.temp_max);
     $('.weather-conditions').append(weather_data.weather[0].description);
     $('.wind-speed').append(weather_data.wind.speed);
-    $('.sunrise-time').append(weather_data.sys.sunrise * 1000);
-    $('.sunset-time').append(weather_data.sys.sunset * 1000);
+    var sunRise = new Date(weather_data.sys.sunrise * 1000)
+    $('.sunrise-time').append(sunRise);
+    var sunSet = new Date((weather_data.sys.sunset * 1000));
+    $('.sunset-time').append(sunSet);
 }
 
 
