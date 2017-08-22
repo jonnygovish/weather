@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.js"></script>
     <title>Weather</title>
 </head>
 
 <body>
     <section1>
-        <div class="jumbotron">
-            <h1>Weather Page</h1>
-        </div>
+        <center>
+            <div class="jumbotron">
+                <h1>Weather Page</h1>
+            </div>
+        </center>
     </section1>
     <section2>
-        <div>
+        <div class="panel panel-info">
             <h2>City</h2>
-            <p id="temperature"></p>
-            <p id="min_temp"></p>
-            <p id="max_temp"></p>
-            <p id="weather-conditions"></p>
-            <p id="wind-speed"></p>
-            <p id="sunrise-time"></p>
-            <p id="sunset-time"></p>
+            <p>Temp: <span class="temp"></span></p>
+            <p>Minimum Temperature: <span class="min-temp"></span> </p>
+            <p>Maximum Temperature: <span class="max_temp"></span> </p>
+            <p>Description of the weather conditions: <span class="weather-conditions"></span> </p>
+            <p>The wind speed: <span class="wind-speed"></span> </p>
+            <p>Sunrise time: <span class="sunrise-time"></span> </p>
+            <p>Sunset time: <span class="sunset-time"></span> </p>
 
 
         </div>
     </section2>
-    <scripts src="js/jquery-3.2.1.js"></scripts>
-    <scripts src="js/scripts.js"></scripts>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
